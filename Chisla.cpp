@@ -5,7 +5,8 @@ int main() {
 	
 	int n;
 	int c[4];
-	string s[4][3];
+	string str;
+	string s[3][3];
 	s[0][0]="тысяча";
 	s[0][1]="тысячи"; 
 	s[0][2]="тысяч";
@@ -17,13 +18,20 @@ int main() {
 	s[2][2]="миллиардов";
 	s[3][0]='';
 	
-	cout<<"введите число до 1 000 000 000"<<endl;
+	cout<<"vvedite chislo do 1 000 000 000"<<endl;
 	cin>>n>>endl;
 	c[3]=n%1000;
 	c[0]=(n%1000000)/1000;
 	c[1]=(n%1000000000)/1000000;
 	c[2]=(n%1000000000);
 	
+	for(i==0; i<4;i++)
+	{
+		if (0<c[i]<3)
+		{
+			str = str + s[0][0];
+		else if (c[i])
+	}
 	if (n>=10 && n<20)
 	{
 	switch(n){
@@ -38,7 +46,7 @@ int main() {
 		case 18: cout<<'восемнадцать';break;
 		case 19: cout<<'девятнадцать';break; }	
 	}
-	else {	
+	else{	
 	switch(n%10)
 	{
 		case 2: cout<<'два';break;
@@ -50,4 +58,5 @@ int main() {
 		case 8: cout<<'восемь';break;
 		case 9: cout<<'девять';break;
 	}
+
 }
