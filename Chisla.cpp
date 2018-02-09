@@ -2,12 +2,27 @@
 using namespace std;
 
 int main() {
-	setlocale(LC_ALL, "Russian");
+	
 	int n;
-	string st;
-	c=
+	int c[4];
+	string s[3][3];
+	s[0][0]="тысяча";
+	s[0][1]="тысячи"; 
+	s[0][2]="тысяч";
+	s[1][0]="миллион"; 
+	s[1][1]="миллиона"; 
+	s[1][2]="миллионов";
+	s[2][0]="миллиард";
+	s[2][1]="миллиарда";
+	s[2][2]="миллиардов";
+	s[3][0]='';
+	
 	cout<<"vvedite chislo do 1 000 000 000"<<endl;
 	cin>>n>>endl;
+	c[3]=n%1000;
+	c[0]=(n%1000000)/1000;
+	c[1]=(n%1000000000)/1000000;
+	c[2]=(n%1000000000);
 	
 	if (n>=10 && n<20)
 	{
@@ -23,7 +38,7 @@ int main() {
 		case 18: cout<<'восемнадцать';break;
 		case 19: cout<<'девятнадцать';break; }	
 	}
-	else{	
+	else {	
 	switch(n%10)
 	{
 		case 2: cout<<'два';break;
@@ -35,30 +50,4 @@ int main() {
 		case 8: cout<<'восемь';break;
 		case 9: cout<<'девять';break;
 	}
-
-	switch(n%100)
-	{
-		case 2: cout<<'двадцать';break;
-		case 3: cout<<'тридцать';break;
-		case 4: cout<<'сорок';break;
-		case 5: cout<<'пятьдесят';break;
-		case 6: cout<<'шестьдесят';break;
-		case 7: cout<<'семьдесят';break;
-		case 8: cout<<'восемьдесят';break;
-		case 9: cout<<'девяноста';break;
-	}
-	
-	switch(n%1000)
-	{}
-	
-	switch(n%10000)
-	{}
-
-	switch(n%100000)
-	{}
-	
-	switch(n%1000000)
-	{}
-		
-	return 0;
 }
