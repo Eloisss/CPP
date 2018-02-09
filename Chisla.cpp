@@ -38,14 +38,14 @@ int main() {
 
 	switch(n%100)
 	{
-		case 2: cout<<'два';break;
-		case 3: cout<<'три';break;
-		case 4: cout<<'четыре';break;
-		case 5: cout<<'пять';break;
-		case 6: cout<<'шесть';break;
-		case 7: cout<<'семь';break;
-		case 8: cout<<'восемь';break;
-		case 9: cout<<'девять';break;
+		case 2: cout<<'двадцать';break;
+		case 3: cout<<'тридцать';break;
+		case 4: cout<<'сорок';break;
+		case 5: cout<<'пятьдесят';break;
+		case 6: cout<<'шестьдесят';break;
+		case 7: cout<<'семьдесят';break;
+		case 8: cout<<'восемьдесят';break;
+		case 9: cout<<'девяноста';break;
 	}
 	
 	switch(n%1000)
