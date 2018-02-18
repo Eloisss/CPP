@@ -11,6 +11,7 @@ int main()
 
 	int n;
 	int c[4];
+	int e[3];
 	string s[4][3];
 	s[0][0] = ' ';
 	s[0][1] = ' ';
