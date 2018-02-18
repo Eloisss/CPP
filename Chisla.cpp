@@ -53,18 +53,18 @@ int main()
 
 	for (int i = 3; i>0; i--)
 	{
-		if (e[i] = 1)
+		if (e[i] == 1)
 		{
-			int x = с[i];
+			int x = c[i];
 			cout << stroka(x) << ' ' << s[i][0] << ' ';
 		}
 
-		else if (1<e[i]<5 || e[i] = 0)
+		else if (1<e[i]<5)
 		{
 			int x = c[i];
 			cout << stroka(x) << ' ' << s[i][1] << ' ';
 		}
-		else if (4<e[i]<10)
+		else if (4<e[i]<10 || e[i] == 0)
 		{
 			int x = c[i];
 			cout << stroka(x) << ' ' << s[i][2] << ' ';
