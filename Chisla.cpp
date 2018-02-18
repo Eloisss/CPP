@@ -36,7 +36,7 @@ int main()
 	for (i = 0; i<3; i++)
 	{
 		int x = c[i];
-		cout << n << " = " << part(x) << s[i][0] << endl;
+		cout << n << " = " << stroka(x) << s[i][0] << endl;
 	}
 
 
